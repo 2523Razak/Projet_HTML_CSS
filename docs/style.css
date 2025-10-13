@@ -33,23 +33,22 @@ body {
 }
 
 .entete h2 {
-    color: #1eb8a8;
+    color: #040404;
     margin-bottom: 20px;
     font-size: 1.5rem;
 }
 
-/* Texte de la garantie */
-.garantie {
-    color: hsl(71, 73%, 54%);
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
 .entete p {
-    color: #666;
+    color:#dad7d793;
     font-size: 16px;
 }
 
+/* Texte de la garantie */
+.entete p.garantie {
+  color:hsl(71, 73%, 54%); /* Couleur jaune/vert pour le texte de garantie */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 /* Section prix et avantages */
 .section-prix {
     display: flex;
