@@ -34,15 +34,23 @@ body {
 
 .entete h2 {
     color: #040404;
+    color: #040404;
     margin-bottom: 20px;
     font-size: 1.5rem;
 }
 
 .entete p {
     color:#dad7d793;
+    color:#dad7d793;
     font-size: 16px;
 }
 
+/* Texte de la garantie */
+.entete p.garantie {
+  color:hsl(71, 73%, 54%); /* Couleur jaune/vert pour le texte de garantie */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 /* Texte de la garantie */
 .entete p.garantie {
   color:hsl(71, 73%, 54%); /* Couleur jaune/vert pour le texte de garantie */
