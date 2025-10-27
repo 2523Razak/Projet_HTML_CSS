@@ -34,13 +34,11 @@ body {
 
 .entete h2 {
     color: #040404;
-    color: #040404;
     margin-bottom: 20px;
     font-size: 1.5rem;
 }
 
 .entete p {
-    color:#dad7d793;
     color:#dad7d793;
     font-size: 16px;
 }
@@ -118,7 +116,8 @@ body {
 .avantages {
     background-color: #43d6c7;
     color: #fff;
-    padding: 30px;
+    line-height: 1em;
+    /*padding: 30px;*/
     flex: 1;
     min-width: 300px;
 }
