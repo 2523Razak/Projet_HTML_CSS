@@ -211,3 +211,6 @@ body {
 ```
 
 * Sur les écrans petits, les deux blocs se placent **verticalement** pour mieux s’afficher.
+![Capture d'écran vu ordinateur](Vu_en_mode_ordinateur.png)
+![Capture d'écran vu téléphone ](Vu_en_mode_téléphone.png)
+
