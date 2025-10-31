@@ -185,8 +185,6 @@ Créer une page "Social Proof" qui :
 - **Mobile** : Tout s'empile verticalement
 - Les évaluations passent de décalées à centrées
 
-## Si tu reviens dans quelques années...
-
 Cette page montre des témoignages clients avec évaluations. Le code utilise :
 - **HTML sémantique** (`section`, `article`, `header`) pour une meilleure structure
 - **CSS Grid** pour le layout principal
@@ -194,3 +192,17 @@ Cette page montre des témoignages clients avec évaluations. Le code utilise :
 - **Design responsive** qui s'adapte mobile/desktop
 
 Les couleurs violettes dominent, avec des effets de survol et un décalage visuel des évaluations sur desktop.
+
+## Aperçu du Projet Mobile S 320px
+
+![Capture d'écran de ma page](Capture_MobileS_320px.png)
+
+## Aperçu du Projet Tablette 768px
+
+![Capture d'écran de ma page](Capture_Tablet_768px.png)
+
+## Aperçu du Projet Laptop 1440px
+
+![Capture d'écran de ma page](Capture_Laptop_1440px.png)
+
+
