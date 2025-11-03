@@ -192,7 +192,7 @@ Cette page montre des témoignages clients avec évaluations. Le code utilise :
 - **Design responsive** qui s'adapte mobile/desktop
 
 Les couleurs violettes dominent, avec des effets de survol et un décalage visuel des évaluations sur desktop.
-## Lien du Git Page : [https://github.com/2523Razak/Projet_HTML_CSS.git](https://2523razak.github.io/Projet_HTML_C)
+# Lien du Git Page : https://2523razak.github.io/Projet_HTML_CSS/
 
 ## Aperçu du Projet Mobile S 320px
 
