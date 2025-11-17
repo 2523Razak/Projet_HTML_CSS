@@ -1,58 +1,125 @@
-# Explication du Code - Page d'Accueil Google
+# Information sur les projets :
 
-## Structure HTML
+## - Projet 1 → se trouve sur la branche principale
+## - Projet 2 (Page de témoignages / Preuve sociale) → se trouve sur la ` branche projet-2`
 
-### En-tête (Header)
+# README – Grille de prix simple en HTML & CSS
+
+## Description du projet
+
+Ce projet est une **page web simple** qui présente une grille de prix pour un service ou un abonnement.
+L’objectif est pédagogique : aider les débutants à comprendre comment organiser une page avec **HTML** et la styliser avec **CSS**, tout en créant une mise en page responsive (qui s’adapte aux ordinateurs et aux téléphones).
+
+Le projet contient deux fichiers principaux :
+
+* `index.html` → Contient le contenu de la page.
+* `style.css` → Contient le style et l’apparence de la page.
+
+## 1. Structure du code HTML
+
+### Déclaration du document
+
 ```html
-<header class="en-tete">
-    <span class="lien-gmail"><a href="#">Gmail</a></span>
-    <a href="#">Images</a>
-</header>
-```
-- **`<header>`** : Contient la navigation en haut de page
-- **Liens** : "Gmail" et "Images" alignés à droite
-- **Effet hover** : Changement de fond au survol
-
-### Contenu Principal (Main)
-```html
-<main class="contenu-principal">
-    <!-- Logo Google coloré -->
-    <section class="logo-google">
-        <h1 class="bleu">G</h1>
-        <h1 class="rouge">o</h1>
-        <!-- ... autres lettres -->
-    </section>
-    
-    <!-- Barre de recherche -->
-    <section class="section-recherche">
-        <div class="conteneur-recherche">
-            <input type="text" class="champ-recherche" placeholder="🔍 Recherche Google">
-        </div>
-    </section>
-    
-    <!-- Boutons d'action -->
-    <section class="section-boutons">
-        <button class="bouton-recherche">Recherche Google</button>
-        <button class="bouton-chance">J'ai de la chance</button>
-    </section>
-</main>
+<!DOCTYPE html>
+<html lang="fr">
 ```
 
-### Pied de Page (Footer)
+* `<!DOCTYPE html>` : Indique que le fichier est un document **HTML5**.
+* `<html lang="fr">` : Débute le code HTML et définit la langue en français pour le navigateur.
+
+### En-tête du document (`<head>`)
+
 ```html
-<footer class="liens-supplementaires">
-    <div class="ligne-liens">
-        <span>Sadoré-Say-Tillabery</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grille de prix simple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+```
+
+* `<meta charset="UTF-8">` : Permet d’afficher correctement les caractères accentués.
+* `<meta name="viewport"...>` : Rend la page responsive (s’adapte aux écrans mobiles).
+* `<title>` : Le titre qui apparaît dans l’onglet du navigateur.
+* `<link rel="stylesheet" href="style.css">` : Lien vers le fichier CSS pour styliser la page.
+
+### Corps de la page (`<body>`)
+
+```html
+<body>
+    <div class="boite-principale">
+        ...
     </div>
-    <div class="ligne-localisation">
-        <span>Confidentialité•Conditions•Paramètres</span>
-    </div>
-</footer>
+</body>
 ```
 
-## 🎨 Styles CSS
+* `<body>` : Contient tout ce qui sera affiché à l’écran.
+* `<div class="boite-principale">` : Conteneur principal regroupant **tous les éléments de la page**.
 
-### Reset et Base
+### En-tête visible sur la page
+
+```html
+<section class="entete">
+    <h2>Join our community</h2>
+    <p class="garantie">30-days, hassle-free money back guarantee</p>
+    <p>Gain access to our full library of tutorials along with expert code reviews...</p>
+</section>
+```
+
+* `<section>` : Sert à regrouper un contenu logique.
+* `<h2>` : Titre de l’en-tête.
+* `<p>` : Paragraphe pour les textes descriptifs.
+* `.garantie` : Classe CSS pour styliser spécifiquement ce texte.
+
+### Section des prix et avantages
+
+```html
+<div class="section-prix">
+    <section class="abonnement"> ... </section>
+    <section class="avantages"> ... </section>
+</div>
+```
+
+* `<div class="section-prix">` : Conteneur pour les deux blocs principaux.
+* `<section class="abonnement">` : Bloc affichant le prix et bouton d’inscription.
+* `<section class="avantages">` : Bloc listant les bénéfices pour l’utilisateur.
+
+#### Bloc abonnement
+
+```html
+<h3>Monthly Subscription</h3>
+<div class="prix">
+    <span>$29</span>
+    <span class="par-mois">per month</span>
+</div>
+<p>Full access for less than $1 a day</p>
+<a href="#" class="bouton">Sign Up</a>
+```
+
+* `<h3>` : Sous-titre pour le type d’abonnement.
+* `<div class="prix">` : Contient le prix et la fréquence.
+* `<span>` : Sert à styliser séparément le prix et le texte "par month".
+* `<a href="#" class="bouton">` : Lien qui sert de bouton pour s’inscrire.
+
+#### Bloc avantages
+
+```html
+<h3>Why Us</h3>
+<ul>
+    <li>Tutorials by industry experts</li>
+    <li>Peer & expert code review</li>
+    <li>Coding exercises</li>
+    ...
+</ul>
+```
+
+* `<ul>` : Liste à puces.
+* `<li>` : Chaque élément de la liste.
+
+## 2. Explication du CSS
+
+### Réinitialisation des marges et paddings
+
 ```css
 * {
     margin: 0;
@@ -60,96 +127,94 @@
     box-sizing: border-box;
 }
 ```
-- **Reset** : Supprime les marges et paddings par défaut
-- **Box-sizing** : Inclut bordures/paddings dans les dimensions
 
-### Disposition Globale
+* Supprime les marges et paddings par défaut pour tous les éléments.
+* `box-sizing: border-box` : Facilite le calcul des tailles (padding inclus).
+
+### Styles du corps et du fond
+
 ```css
 body {
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #eaf3f7;
+    color: #333;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 ```
-- **Flexbox** : Organisation verticale header/main/footer
-- **100vh** : Prend toute la hauteur de l'écran
 
-### Logo Google Coloré
-```css
-.logo-google h1 {
-    font-size: 90px;
-    font-weight: normal;
-}
-.bleu { color: #4285F4; }
-.rouge { color: #EA4335; }
-.jaune { color: #FBBC05; }
-.vert { color: #34A853; }
-```
-- **Chaque lettre** a sa propre classe de couleur
-- **Taille** : 90px pour desktop
+* Définit la police, les couleurs, et centre la page au milieu de l’écran.
 
-### Barre de Recherche
+### Boîte principale
+
 ```css
-.champ-recherche {
+.boite-principale {
+    max-width: 650px;
     width: 100%;
-    height: 46px;
-    border-radius: 24px;
-    border: 1px solid #dfe1e5;
-    padding: 0 45px;
-}
-.icone-recherche {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 ```
-- **Position absolute** : Icône positionnée dans la barre
-- **Border-radius** : Coins arrondis style Google
-- **Padding** : Espace pour l'icône
 
-### Effets Interactifs
+* Crée un conteneur avec des **coins arrondis**, une **ombre légère** et une largeur maximale.
+
+### En-tête
+
 ```css
-/* Survol des liens header */
-.en-tete a:hover {
-    background-color: #f0f0f0;
-    border-radius: 8px;
+.entete {
+    background-color: #fff;
+    padding: 30px;
 }
-
-/* Survol barre de recherche */
-.champ-recherche:hover {
-    box-shadow: 0 1px 6px rgba(32,33,36,.28);
-}
-
-/* Survol boutons */
-.bouton-recherche:hover {
-    box-shadow: 0 1px 1px rgba(0,0,0,.1);
-    border: 1px solid #dadce0;
-    background-color:  #34A853;
-}
+.entete h2 { color: #040404; margin-bottom: 20px; font-size: 1.5rem; }
+.entete p { color: #dad7d793; font-size: 16px; }
+.entete p.garantie { color:hsl(71, 73%, 54%); font-weight: bold; margin-bottom: 15px; }
 ```
 
-### Responsive Design
+* Styles pour le texte de l’en-tête et le texte de garantie.
+
+### Section prix et avantages
+
 ```css
-@media (max-width: 760px) {
-    .logo-google h1 { font-size: 60px; }
-    .section-recherche { width: 90%; }
-    .section-boutons { 
-        flex-direction: column;
-        width: 90%;
-    }
-    .bouton-recherche { width: 100%; }
+.section-prix { display: flex; flex-wrap: wrap; }
+.abonnement, .avantages { flex: 1; min-width: 300px; padding: 30px; }
+```
+
+* Utilise **Flexbox** pour afficher les deux blocs côte à côte.
+* `flex-wrap: wrap` : Si l’écran est trop petit, les blocs passent en colonne.
+
+### Bloc abonnement
+
+```css
+.abonnement { background-color: #1eb8a8; color: #fff; }
+.prix { font-size: 2rem; font-weight: bold; display: flex; align-items: center; }
+.bouton { background-color: #c4f13b; text-align: center; padding: 15px; border-radius: 5px; transition: 0.3s; }
+.bouton:hover { background-color: #b3df2f; }
+```
+
+* Stylise le **prix**, le **bouton d’inscription**, et ajoute un **effet au survol**.
+
+### Bloc avantages
+
+```css
+.avantages { background-color: #43d6c7; color: #fff; }
+.avantages ul { list-style-type: none; }
+.avantages li { margin-bottom: 5px; font-size: 16px; }
+```
+
+* Stylise la liste des avantages sans puces et avec une couleur de fond différente.
+
+### Responsive pour mobile
+
+```css
+@media (max-width: 768px) {
+    .section-prix { flex-direction: column; }
 }
 ```
-- **Media query** : Adapte le style pour mobile
-- **Flex-direction column** : Boutons empilés verticalement
-- **Width 90%** : Prend presque toute la largeur
 
-## 🔄 Fonctionnement
-
-1. **Structure** : Header → Main → Footer (flex column)
-2. **Centrage** : Le main prend tout l'espace disponible avec `flex-grow: 1`
-3. **Responsive** : Le media query s'active en dessous de 760px
-4. **Interactions** : Effets visuels au survol pour meilleure UX
-
-Le code reproduit fidèlement l'interface Google avec une structure simple et un CSS efficace.
+* Sur les écrans petits, les deux blocs se placent **verticalement** pour mieux s’afficher.
+![Capture d'écran vu ordinateur](Vu_en_mode_ordinateur.png)
+![Capture d'écran vu téléphone ](Vu_en_mode_téléphone.png)
