@@ -157,15 +157,16 @@ Le code reproduit fidèlement l'interface Google avec une structure simple et un
 
 ## Aperçu du Projet Mobile S 320px
 
-![Capture d'écran de ma page](Page_ 320px.png)
+![Capture d'écran de ma page](Page320px.png)
 
 ## Aperçu du Projet Tablette 768px
 
-![Capture d'écran de ma page](Page_ 768px.png)
+![Capture d'écran de ma page](Page768px.png)
 
 ## Aperçu du Projet Laptop 1440px
 
-![Capture d'écran de ma page](Page_ 1440px.png)
+![Capture d'écran de ma page](Page1440px.png)
+
 
 
 
