@@ -3,45 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grille de prix simple</title>
-    <!-- On relie le fichier CSS ici -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="google.css">
+    <title>Google</title>
 </head>
 <body>
-    <!-- Conteneur principal -->
-    <div class="boite-principale">
-        <!-- En-tête du site -->
-        <section class="entete">
-            <h2>Join our community</h2>
-            <p class="garantie">30-days, hassie-free money back guarantee</p>
-            <p>Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
+    <!-- En-tête avec les liens de navigation -->
+    <header class="en-tete">
+        <span class="lien-gmail"><a href="#">Gmail</a></span>
+        <a href="#">Images</a>
+    </header>
+    
+    <!-- Contenu principal de la page -->
+    <main class="contenu-principal">
+        <!-- Section du logo Google avec chaque lettre colorée -->
+        <section class="logo-google">
+            <h1 class="bleu">G</h1>
+            <h1 class="rouge">o</h1>
+            <h1 class="jaune">o</h1>
+            <h1 class="bleu">g</h1>
+            <h1 class="vert">l</h1>
+            <h1 class="rouge">e</h1>
         </section>
-        <!-- Section des prix et avantages -->
-        <div class="section-prix">
-            <!-- Bloc abonnement -->
-            <section class="abonnement">
-                <h3>Monthly Subscription</h3>
-                <div class="prix">
-                    <span>$29</span>
-                    <span class="par-mois">per month</span>
-                </div>
-                <p>Full access for less than $1 a day</p>
-                <a href="#" class="bouton">Sign Up</a>
-            </section>
-            <!-- Bloc avantages -->
-            <section class="avantages">
-                <h3>Why Us</h3>
-                <ul>
-                    <li>Tutorials by industry experts</li>
-                    <li>Peer & expert code review</li>
-                    <li>Coding exercises</li>
-                    <li>Access to our GitHub repos</li>
-                    <li>Community form</li>
-                    <li>Flashcard decks</li>
-                    <li>New videos every week</li>
-                </ul>
-            </section>
+        
+        <!-- Section de recherche avec barre et icône -->
+        <section class="section-recherche">
+            <div class="conteneur-recherche">
+                <!-- Icône de loupe dans la barre de recherche -->
+                <!--<div class="icone-recherche"></div>-->
+                <!-- Champ de saisie pour la recherche -->
+                <input type="text" class="champ-recherche" placeholder="🔍 Recherche Google">
+            </div>
+        </section>
+        
+        <!-- Section des boutons de recherche -->
+        <section class="section-boutons">
+            <button class="bouton-recherche">Recherche Google</button>
+            <button class="bouton-chance">J'ai de la chance</button>
+        </section>
+    </main>
+    
+    <!-- Pied de page avec les liens supplémentaires -->
+    <footer class="liens-supplementaires">
+        <div class="ligne-liens">
+            <span>Sadoré-Say-Tillabery</span>
         </div>
-    </div>
+        <div class="ligne-localisation">
+            <span>Confidentialité•Conditions•Paramètres</span>
+        </div>
+    </footer>
 </body>
 </html>
