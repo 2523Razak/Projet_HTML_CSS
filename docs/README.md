@@ -154,6 +154,7 @@ body {
 
 Le code reproduit fidèlement l'interface Google avec une structure simple et un CSS efficace.
 
+# Lien du Git Page : https://2523razak.github.io/Projet_HTML_CSS/
 
 ## Aperçu du Projet Mobile S 320px
 
@@ -166,6 +167,7 @@ Le code reproduit fidèlement l'interface Google avec une structure simple et un
 ## Aperçu du Projet Laptop 1440px
 
 ![Capture d'écran de ma page](Page1440px.png)
+
 
 
 
