@@ -50,7 +50,6 @@ body {
     transition: all 0.3s ease;
 }
 
-
 /* Styles du contenu principal */
 .contenu-principal {
     display: flex;
@@ -104,16 +103,6 @@ body {
     position: relative;
 }
 
-/* Styles de l'icône de recherche */
-/*.icone-recherche {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #9AA0A6;
-    z-index: 1;
-}*/
-
 /* Styles du champ de recherche */
 .champ-recherche {
     width: 100%;
@@ -124,13 +113,14 @@ body {
     font-size: 16px;
     /* Supprime le contour par défaut */
     outline: none;
+    transition: all 0.3s ease;
 }
 
 /* Effets au survol et focus du champ de recherche */
 .champ-recherche:hover,
 .champ-recherche:focus {
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
-    border-color: rgba(223,225,229,0);
+    border-color: #4285F4;
 }
 
 /* Styles de la section des boutons */
@@ -148,11 +138,14 @@ body {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
-    color: #3c4043;
+    color: #070707;
     font-size: 14px;
+    font-weight: bold;
     padding: 10px 16px;
     /* Change le curseur pour indiquer que c'est cliquable */
     cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: normal;
 }
 
 /* Effets au survol des boutons */
@@ -160,7 +153,9 @@ body {
 .bouton-chance:hover {
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
     border: 1px solid #dadce0;
-    background-color:  #34A853;
+    background-color: #f8f9fa;
+    color: #1bec3e;
+    font-weight: bold;
 }
 
 /* Styles des liens supplémentaires dans le footer */
@@ -169,7 +164,8 @@ footer.liens-supplementaires {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 20px;
+    padding: 5px;
+    margin-top: auto;
 }
 
 /* Styles de la ligne Sadoré-Say-Tillabery */
@@ -184,6 +180,22 @@ footer.liens-supplementaires {
     font-size: 14px;
 }
 
+/* Media queries pour la tablette (768px) */
+@media (max-width: 768px) {
+    .en-tete {
+        justify-content: center;
+    }
+    
+    .logo-google h1 {
+        font-size: 80px;
+    }
+
+    .section-recherche {
+        width: 90%;
+    }
+}
+
+/* Media queries pour le mobile (760px et moins) */
 @media (max-width: 760px) {
     .logo-google h1 {
         font-size: 60px;
@@ -194,12 +206,35 @@ footer.liens-supplementaires {
     }
 
     .section-boutons {
-        flex-direction: column;
+        flex-direction: row;
         width: 90%;
+        flex-wrap: wrap;
     }
 
     .bouton-recherche,
     .bouton-chance {
-        width: 100%;
+        width: auto;
+        flex: 1;
+        min-width: 140px;
+    }
+}
+
+/* Media queries pour les très petits écrans (320px) */
+@media (max-width: 320px) {
+    .en-tete {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .section-boutons {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .bouton-recherche,
+    .bouton-chance {
+        min-width: 120px;
+        font-size: 12px;
+        padding: 8px 12px;
     }
 }
