@@ -10,7 +10,7 @@
 body {
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     /* Hauteur totale de la fenêtre */
-    height: 100vh;
+    height: 300px;
     /* Disposition en colonne pour header, main et footer */
     display: flex;
     flex-direction: column;
