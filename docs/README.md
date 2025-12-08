@@ -3,6 +3,7 @@
 ## - Projet 1 → se trouve sur la branche principale
 ## - Projet 2 (Page de témoignages / Preuve sociale) → se trouve sur la ` branche projet-2`
 ## - Projet 3 (GOOGLE) → se trouve sur la ` branche projet-3`
+## - Projet 4 (Facebook) → se trouve sur la ` branche projet-4`
 
 # README – Grille de prix simple en HTML & CSS
 
@@ -219,4 +220,5 @@ body {
 * Sur les écrans petits, les deux blocs se placent **verticalement** pour mieux s’afficher.
 ![Capture d'écran vu ordinateur](Vu_en_mode_ordinateur.png)
 ![Capture d'écran vu téléphone ](Vu_en_mode_téléphone.png)
+
 
