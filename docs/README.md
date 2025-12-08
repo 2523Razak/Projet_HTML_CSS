@@ -220,3 +220,13 @@ git clone https://github.com/ton-username/ton-repo.git
 ## Auteur
 
 **Boureima Issa Adamou Razak**
+
+# Capture d'écran du Projet 
+## Capture d'écran_1024px
+![Aperçu de l’interface](Capture d'écran_1024px.png)
+
+## Capture d'écran_768pxpx
+![Aperçu de l’interface](Capture d'écran_768px.png)
+
+## Capture d'écran_320px
+![Aperçu de l’interface](Capture d'écran_320px.png)
