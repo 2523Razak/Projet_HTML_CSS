@@ -203,10 +203,10 @@ Effet de survol pour améliorer l’expérience utilisateur.
 * Les blocs deviennent plus **larges**
 * L’interface reste fluide sur téléphone
 
-## Lancer le projet
+## Lancer le projet(lien GitPage)
 
 ```bash
-git clone https://github.com/ton-username/ton-repo.git
+https://2523razak.github.io/Projet_HTML_CSS/
 ```
 
 ## Accessibilité
@@ -230,3 +230,4 @@ git clone https://github.com/ton-username/ton-repo.git
 
 ## Capture d'écran_320px
 ![Aperçu de l’interface](Capture d'écran_320px.png)
+
