@@ -208,8 +208,9 @@ input[type="password"]:focus {
         gap: 10px;
     }
     
-    /*.gender-options {
+    .gender-options {
+        width: 50%;
         flex-direction: column;
         gap: 10px;
-    }*/
+    }
 }
